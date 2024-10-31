@@ -25,6 +25,10 @@ public class Complex {
         this.y = y;
     }
 
+    public Complex add(Complex sNumber){
+        return new Complex(x+sNumber.getX(),y+sNumber.getY());
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
