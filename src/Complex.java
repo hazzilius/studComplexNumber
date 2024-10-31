@@ -45,6 +45,10 @@ public class Complex {
         return Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
     }
 
+    public Boolean equals(Complex sNumber){
+        return x==sNumber.getX()&&y==sNumber.getY();
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
