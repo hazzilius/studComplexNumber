@@ -29,6 +29,10 @@ public class Complex {
         return new Complex(x+sNumber.getX(),y+sNumber.getY());
     }
 
+    public Complex sub(Complex sNumber){
+        return new Complex(x-sNumber.getX(),y-sNumber.getY());
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
