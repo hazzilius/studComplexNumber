@@ -37,6 +37,10 @@ public class Complex {
         return new Complex(x*sNumber.getX()-y*sNumber.getY(),x*sNumber.getY()+y*sNumber.getX());
     }
 
+    public Complex div(Complex sNumber){
+        return new Complex((x*sNumber.getX()+y*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()),(y*sNumber.getX()-x*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()));
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
