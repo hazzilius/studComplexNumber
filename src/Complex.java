@@ -38,7 +38,7 @@ public class Complex {
     }
 
     public Complex div(Complex sNumber){
-        return new Complex((x*sNumber.getX()+y*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()),(y*sNumber.getX()-x*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()));
+        return new Complex((x*sNumber.getX()+y*sNumber.getY())/(Math.pow(sNumber.getX(), 2)+Math.pow(sNumber.getY(), 2)),(y*sNumber.getX()-x*sNumber.getY())/(Math.pow(sNumber.getX(), 2)+Math.pow(sNumber.getY(), 2)));
     }
 
     public Double abs(){
