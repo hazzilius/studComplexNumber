@@ -41,6 +41,10 @@ public class Complex {
         return new Complex((x*sNumber.getX()+y*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()),(y*sNumber.getX()-x*sNumber.getY())/(sNumber.getX()*sNumber.getX()+sNumber.getY()*sNumber.getY()));
     }
 
+    public Double abs(){
+        return Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
