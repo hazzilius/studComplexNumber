@@ -33,6 +33,10 @@ public class Complex {
         return new Complex(x-sNumber.getX(),y-sNumber.getY());
     }
 
+    public Complex mul(Complex sNumber){
+        return new Complex(x*sNumber.getX()-y*sNumber.getY(),x*sNumber.getY()+y*sNumber.getX());
+    }
+
     public String str() {
         return "("+x+"+"+y+"i)";
     }
